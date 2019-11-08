@@ -1,1 +1,1 @@
-TODO: add zshrc file that sources the appropriate files here
+Just source `source_this.sh` in your `.zshrc` - note that this repo must live at `~/dotfiles`.
