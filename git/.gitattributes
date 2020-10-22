@@ -1,0 +1,8 @@
+*.php   diff=php
+*.css   diff=css
+*.html  diff=html
+*.pl    diff=perl
+*.py    diff=python
+*.md    diff=markdown
+*.rb	diff=ruby
+*.rake	diff=ruby
