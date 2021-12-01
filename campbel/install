@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$SPIN" ]; then
+  DOTFILES_DIR=~/src/github.com/campbel/dotfiles
+  for i in "$DOTFILES_DIR"/dotfiles/*; do
+    echo "Installing $(basename "$i")..."
+    ln -sf "$i" ~/."$(basename "$i")"
+  done
+fi
