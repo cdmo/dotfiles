@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+      "vscodevim.vim", 
+      "castwide.solargraph",
+      "timonwong.shellcheck",
+      "wingrunr21.vscode-ruby"
+    ]
+}
