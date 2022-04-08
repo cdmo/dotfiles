@@ -1,22 +1,23 @@
 [alias]
-  st = status
-  ci = commit
-  co = checkout
-  br = branch
-  dc = diff --cached
+  gap = git add -p
+  gst = git status
+  gci = git commit
+  gco = git checkout
+  gbr = git branch
+  gdc = git diff --cached
   serve = daemon --reuseaddr --verbose --base-path=. --export-all ./.git
-  ci-am = commit --amend --no-edit
+  gci-am = git commit --amend --no-edit
   pr = pull --rebase
-  update = "!echo '==> Stash local changes'; res=$(git stash save 'auto stash by update'); echo "$res"; echo; \
+  gupdate = git "!echo '==> Stash local changes'; res=$(git stash save 'auto stash by update'); echo "$res"; echo; \
              echo '==> Fetching all remote branches and purging'; git fetch --all --prune; echo; \
              echo '==> Fetch from remote repo and rebasing'; git pull --rebase; echo; \
              echo "$res" | grep -q '^No local changes to save' || { echo '==> Apply stashed changes'; git stash pop; }"
-  log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
-  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
-  cleanup = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
+  glog = git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  gls = git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  gll = git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  glnc = git log --pretty=format:"%h\\ %s\\ [%cn]"
+  gld = git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  gcleanup = git "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
 [color]
     branch = auto
     diff = auto
@@ -25,10 +26,6 @@
 [push]
   default = upstream
 [core]
-  editor=vim
+  editor = vim
 [rerere]
   enabled = true
-[commit]
-	gpgsign = true
-[gpg]
-	program = gpg2
