@@ -31,5 +31,5 @@ brew "pgcli"
 
 # http requesting
 brew "httpie"
-tap "rs/tap/curlie"
+brew "rs/tap/curlie"
 brew "wget"
