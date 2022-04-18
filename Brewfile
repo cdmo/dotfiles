@@ -1,7 +1,6 @@
 brew "bat"
 brew "cloc"
 brew "colordiff"
-brew "cscope"
 brew "csvkit"
 brew "fd"
 brew "fx"
@@ -19,7 +18,6 @@ brew "redis"
 brew "ripgrep"
 brew "rtmpdump"
 brew "ruby"
-brew "sshpass"
 brew "tmux"
 brew "trash"
 brew "tree"
@@ -29,9 +27,9 @@ brew "yarn"
 
 # postgres
 tap "dbcli/tap"
-install "pgcli"
+brew "pgcli"
 
 # http requesting
 brew "httpie"
-brew "rs/tap/curlie"
+tap "rs/tap/curlie"
 brew "wget"
