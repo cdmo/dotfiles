@@ -1,7 +1,6 @@
 # stolen from @awead
 gem_group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'niftany'
   gem 'pry-byebug'
   gem 'pry-rails'
 end
