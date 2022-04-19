@@ -1,1 +1,2 @@
-alias gbr="git branch | grep -v "master" | xargs git branch -D"
+# Delete all but main
+alias gbr="git branch | grep -v "main" | xargs git branch -D"
