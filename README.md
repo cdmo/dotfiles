@@ -1,5 +1,5 @@
 # dotfiles
-This project is for storing dotfiles for use with [Spin](https://development.shopify.io/engineering/keytech/spin). 
+This project is for storing dotfiles for use with [Spin](https://development.shopify.io/engineering/keytech/spin). See [here](https://github.com/Shopify/dotfiles-starter-template) for a sample template, or check out branches on this repository for other users' dotfiles.
 
 ## How to add your dotfiles
 Your dotfiles should be placed in this repository on a `branch` named after your github username. For more information on dotfiles in spin, please read [Personalizing your Environment](https://development.shopify.io/engineering/keytech/spin/isospin/tools#Personalizing_your_environment).
