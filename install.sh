@@ -1,11 +1,5 @@
 #!/bin/bash
 
-sudo apt-get install -y \
-  fzf \
-  rcm \
-  silversearcher-ag \
-  tmux
-
 # install mcfly
 cartridge insert mcfly
 ln -sf ~/.data/cartridges/mcfly ~/.mcfly
