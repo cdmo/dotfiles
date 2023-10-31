@@ -56,5 +56,3 @@ source $DF_USER/custom.zsh
 
 # Load changes specific to this local environment.
 source ~/extra.zsh
-
-alias gitsame='git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)'
