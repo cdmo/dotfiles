@@ -3,4 +3,6 @@
 # Put anything here that you want to exist on all your environment, and to have the highest priority
 # over any other customization.
 
+eval "$(mcfly init zsh)"
+
 alias gitsame='git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)'
