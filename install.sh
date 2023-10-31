@@ -48,9 +48,6 @@ if [ $SPIN ]; then
   sudo cp spin/persist-history.service /etc/systemd/system/persist-history.service
   sudo cp spin/persist-history.timer /etc/systemd/system/persist-history.timer
   systemctl start persist-history.service
-
-  # symlink dotfiles
-  ln -sf ~/shopify-dotfiles/zshrc ~/.zshrc
 fi
 
 # Symlink core configs
